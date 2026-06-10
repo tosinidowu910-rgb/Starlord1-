@@ -53,22 +53,26 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
+            margin-top: 20px;
         }
 
         .portfolio-item {
-            background: rgba(30, 30, 30, 0.9);
-            padding: 10px;
-            border-radius: 10px;
-            width: 280px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
+            text-align: center;
         }
 
         .portfolio-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        .portfolio-item p {
+            margin-top: 10px;
+            font-weight: bold;
         }
 
         input,
@@ -87,6 +91,8 @@
             border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
+            background-color: #ff6637;
+            color: white;
         }
 
         form {
@@ -96,6 +102,9 @@
         .back-home {
             display: inline-block;
             margin-top: 20px;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -131,17 +140,17 @@
         <div class="portfolio-grid">
 
             <div class="portfolio-item">
-                <img src="design1.jpg" alt="Design 1">
+                <img src="design1.jpg" alt="Flyer Design">
                 <p>Flyer Design</p>
             </div>
 
             <div class="portfolio-item">
-                <img src="design2.jpg" alt="Design 2">
+                <img src="design2.jpg" alt="Logo Design">
                 <p>Logo Design</p>
             </div>
 
             <div class="portfolio-item">
-                <img src="design3.jpg" alt="Design 3">
+                <img src="design3.jpg" alt="Banner Design">
                 <p>Banner Design</p>
             </div>
 
