@@ -1,178 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starlord Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starlord Portfolio</title>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+<style>
 
-        body {
-            font-family: "Times New Roman", sans-serif;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-            background-color: #f4f4f5;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        nav {
-            background: white;
-            padding: 15px;
-            border-radius: 15px;
-            display: inline-block;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        nav a {
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #333;
-        }
+body{
+    font-family: Arial, sans-serif;
+    background:#121212;
+    color:white;
+    text-align:center;
+}
 
-        nav a:hover {
-            color: #ff6637;
-        }
+/* Navigation */
 
-        h1 {
-            color: #ff6637;
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.9);
+    padding:20px;
+    z-index:100;
+}
 
-        h2 {
-            color: #333;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
 
-        .profile-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ff6637;
-            margin: 20px 0;
-        }
+nav a:hover{
+    color:#ff6637;
+}
 
-        .services-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+/* Hero Section */
 
-        .service {
-            background: white;
-            padding: 20px;
-            width: 250px;
-            border-radius: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+.hero{
+    padding:80px 20px;
+}
 
-        button {
-            background-color: #ff6637;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-size: 18px;
-            cursor: pointer;
-        }
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #ff6637;
+    margin-bottom:20px;
+}
 
-        section {
-            margin-top: 40px;
-        }
+.hero h1{
+    font-size:60px;
+    color:#ff6637;
+    margin-bottom:10px;
+}
 
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            color: #333;
-        }
-    </style>
+.hero h2{
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#bbb;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff6637;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Services */
+
+section{
+    padding:60px 20px;
+}
+
+section h2{
+    margin-bottom:30px;
+    font-size:35px;
+    color:#ff6637;
+}
+
+.services-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.service{
+    background:#1e1e1e;
+    width:280px;
+    padding:25px;
+    border-radius:20px;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.service:hover{
+    transform:translateY(-10px);
+}
+
+.service h3{
+    margin-bottom:10px;
+    color:#ff6637;
+}
+
+.service p{
+    color:#ccc;
+}
+
+/* Contact */
+
+.contact-box{
+    background:#1e1e1e;
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+}
+
+.contact-box p{
+    margin:15px 0;
+}
+
+/* Footer */
+
+footer{
+    background:black;
+    padding:20px;
+    margin-top:40px;
+    color:#999;
+}
+
+</style>
 </head>
 
 <body>
 
-    <nav>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+    <img src="profile.jpg" alt="Profile Photo">
 
     <h1>Starlord</h1>
-
-    <img src="profile.jpg" alt="My Profile Picture" class="profile-pic">
 
     <h2>Graphic Designer & Aspiring Web Designer</h2>
 
     <p>
         I create professional graphic designs and modern websites
-        for businesses, brands, and individuals.
+        for businesses, brands, and individuals. My goal is to help
+        brands stand out with creative designs and responsive websites.
     </p>
 
-    <section id="about">
-        <h2>About Me</h2>
+    <a href="services.html" class="btn">View My Services</a>
 
-        <p>
-            I am a passionate graphic designer and aspiring web designer.
-            I help businesses and individuals create attractive designs,
-            logos, flyers, and responsive websites that stand out.
-        </p>
-    </section>
+</section>
 
-    <section id="services">
+<section id="services">
 
-        <h2>My Services</h2>
+    <h2>My Services</h2>
 
-        <div class="services-container">
+    <div class="services-container">
 
-            <div class="service">
-                <h3>Logo Design</h3>
-                <p>Professional logo design for brands.</p>
-            </div>
-
-            <div class="service">
-                <h3>Flyer Design</h3>
-                <p>Creative flyers for events and promotions.</p>
-            </div>
-
-            <div class="service">
-                <h3>Website Design</h3>
-                <p>Modern and responsive websites.</p>
-            </div>
-
+        <div class="service">
+            <h3>Logo Design</h3>
+            <p>Professional logo designs that build strong brand identity.</p>
         </div>
 
-    </section>
+        <div class="service">
+            <h3>Flyer Design</h3>
+            <p>Creative and eye-catching flyers for events and businesses.</p>
+        </div>
 
-    <section id="contact">
+        <div class="service">
+            <h3>Website Design</h3>
+            <p>Responsive websites that look great on mobile and desktop.</p>
+        </div>
 
-        <h2>Contact Me</h2>
+    </div>
 
-        <a href="https://wa.me/2347076680249">
-            <button>Chat on WhatsApp</button>
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+
+        <a href="https://wa.me/2347076680249" class="btn">
+            Chat on WhatsApp
         </a>
 
         <p>Email: tosinidowu910@gmail.com</p>
 
-        <br>
+        <a href="#" class="btn" onclick="showMessage()">
+            Hire Me
+        </a>
 
-        <button onclick="showMessage()">Hire Me</button>
+    </div>
 
-    </section>
+</section>
 
-    <footer>
-        <p>© 2026 Starlord. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>© 2026 Starlord. All Rights Reserved.</p>
+</footer>
 
-    <script>
-        function showMessage() {
-            alert("Thank you for your interest! Contact me via WhatsApp.");
-        }
-    </script>
+<script>
+function showMessage(){
+    alert("Thank you for your interest! Contact me via WhatsApp.");
+}
+</script>
 
 </body>
 </html>
